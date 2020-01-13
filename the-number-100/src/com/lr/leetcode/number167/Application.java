@@ -26,10 +26,14 @@ package com.lr.leetcode.number167;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 借助hashMap的key存储数组的value,hashMap的value为数据的index
+ * 这种做法可以使用于乱序的数组。
+ */
 public class Application {
 
     public int[] twoSum(int[] numbers, int target) {
-        //使用hashMap的key存储数组的value,hashMap的value为数据的index。
+
         Map<Integer, Integer> hashMap = new HashMap<>();
 
         /**
