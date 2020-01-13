@@ -29,6 +29,8 @@ import java.util.Map;
 /**
  * 借助hashMap的key存储数组的value,hashMap的value为数据的index
  * 这种做法可以使用于乱序的数组。
+ *
+ * 时间复杂度为O(n）,空间复杂度为B(n).
  */
 public class Application {
 
@@ -36,9 +38,6 @@ public class Application {
 
         Map<Integer, Integer> hashMap = new HashMap<>();
 
-        /**
-         * 时间复杂度为O(n）,空间复杂度为B(n).
-         */
         for (int i = 0; i < numbers.length; i++) {
             if (hashMap.containsKey(target - numbers[i])) {
                 return new int[]{hashMap.get(target - numbers[i]) + 1, i + 1};
