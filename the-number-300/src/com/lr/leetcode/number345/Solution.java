@@ -48,6 +48,9 @@ public class Solution {
             }else if(!list.contains(rightValue)){
                 result[right--] = rightValue;
             }else{
+                /**
+                 * 表明左指针不相等，右指针也不相等。即左右指针都相等。
+                 */
                 result[left++] = rightValue;
                 result[right--] = leftValue;
             }
