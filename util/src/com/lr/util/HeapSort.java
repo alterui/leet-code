@@ -29,6 +29,9 @@ public class HeapSort {
 
         swap(nums, 0, --heapSize);
 
+        /**
+         * 需要依次取出最大的值，最终形成一个从小到大的值
+         */
         while (heapSize > 0) {
             heapify(nums, 0, heapSize);
             swap(nums,0,--heapSize);
