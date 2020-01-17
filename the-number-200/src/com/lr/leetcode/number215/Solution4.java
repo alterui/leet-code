@@ -6,13 +6,8 @@ package com.lr.leetcode.number215;
  */
 public class Solution4 {
 
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{3, 2, 1, 5, 6, 4};
-        System.out.println(new Solution4().findKthLargest(nums, 2));
-    }
-
     public int findKthLargest(int[] nums, int k) {
+        //用于保证堆的数目小于k
         int heapSize = 0;
         for (int i = 0; i < nums.length; i++) {
 
