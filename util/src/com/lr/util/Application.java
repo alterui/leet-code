@@ -8,13 +8,9 @@ import java.util.*;
  */
 public class Application {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(4);
-
-        list.toArray();
-
-        System.out.println(list.toArray());
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(1);
+        System.out.println(set.size());
     }
 }
