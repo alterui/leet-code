@@ -8,9 +8,8 @@ import java.util.*;
  */
 public class Application {
     public static void main(String[] args) {
-        Set<Integer> set = new HashSet<>();
-        set.add(1);
-        set.add(1);
-        System.out.println(set.size());
+        int[][] arr = new int[2][3];
+
+        System.out.println(1%2);
     }
 }
