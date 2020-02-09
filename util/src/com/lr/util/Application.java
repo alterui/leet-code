@@ -8,6 +8,8 @@ import java.util.*;
  */
 public class Application {
     public static void main(String[] args) {
-        System.out.println(3^7);
+        String a = "cfs";
+        int r = a.indexOf('f', 0);
+        System.out.println(r);
     }
 }
