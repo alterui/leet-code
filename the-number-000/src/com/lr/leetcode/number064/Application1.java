@@ -37,6 +37,15 @@ public class Application1 {
     }
 
 
+    /**
+     * f函数表示当前位置的最小路径总和，分为三步
+     * 1，第一x轴
+     * 2，第一y轴
+     * 3，剩下的
+     *
+     * @param grid
+     * @return
+     */
     public int minPathSum(int[][] grid) {
 
         int  x = grid.length;
