@@ -1,13 +1,8 @@
-.idea/
-target/
-*.iml
-*.ipr
-*.iws
-rdfa-scaffold.iml
-rdfa-scaffold.ipr
-rdfa-scaffold.iws
+HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
 ### STS ###
 .apt_generated
@@ -23,16 +18,18 @@ target/
 *.iws
 *.iml
 *.ipr
-/target/
-/.mvn/
-/.idea/
 
 ### NetBeans ###
 /nbproject/private/
-/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-/.DS_Store
-.DS_Store
+build/
+
+### VS Code ###
+.vscode/
+**/mvnw
+**/mvnw.cmd
+**/.mvn
+
